@@ -20,7 +20,7 @@ buildNumber.properties
 .vscode
 
 # IDEA
-*.idea
+.idea
 *.iml
 
 # eclipse project file
@@ -38,11 +38,3 @@ nb-configuration.xml
 # Vim
 *.swp
 *.swo
-
-# Python
-venv/
-*/.python-version
-
-# Component tests
-build.zip
-test-classes.zip
