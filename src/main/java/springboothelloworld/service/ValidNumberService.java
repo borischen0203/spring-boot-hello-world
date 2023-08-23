@@ -2,9 +2,10 @@ package springboothelloworld.service;
 
 import org.springframework.stereotype.Service;
 
+@Service
 public class ValidNumberService {
 
-    public static boolean isValid(String cardNo){
+    public boolean isValid(String cardNo){
         int nDigits = cardNo.length();
 
         int nSum = 0;

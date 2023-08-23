@@ -10,11 +10,11 @@ import springboothelloworld.service.ValidNumberService;
 @RestController
 public class ValidController {
 
-//    @Autowired
-//    private ValidNumberService validNumberService;
+    @Autowired
+    private ValidNumberService validNumberService;
 
     @GetMapping("/api/card/{number}")
     public boolean checkNumber(@PathVariable String number) {
-        return ValidNumberService.isValid(number);
+        return validNumberService.isValid(number);
     }
 }
